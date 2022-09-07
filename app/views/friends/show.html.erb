@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="card" style="width: 25rem; background-color: grey; color: white;">
+  <div class="card-body">
+    <h5 class="card-title"><strong>Name:</strong><%= @friend.first_name %> <%= @friend.last_name %></h5>
+    <h6><strong>Email:</strong><td><%= @friend.email %></td><br>
+        <strong>Phone:</strong><td><%= @friend.phone %></td><br>
+        <strong>Twitter:</strong><td><%= @friend.twitter %></td></h6>
+        <br>
+    <%= link_to "Edit this friend", edit_friend_path(@friend), class:"btn btn-outline-light" %> <br><br>
+    <%= button_to "Delete", @friend, method: :delete, class:"btn btn-outline-light" %><br>
+    <%= link_to "Back to friends", friends_path, class:"btn btn-outline-light"%>
+  </div>
+</div>
+</div>
+
+

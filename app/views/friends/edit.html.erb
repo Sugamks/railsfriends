@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <br>
+  <h1>Edit Friend</h1>
+
+<%= render "form", friend: @friend %>
+<div class="container-fluid">
+<br>
+  <%= button_to "Delete", @friend, method: :delete, class:"btn btn-outline-dark" %>  <br> <%= link_to "Back to friends", friends_path, class:"btn btn-outline-dark" %>
+</div>
+</div>
